@@ -18,7 +18,9 @@ async function start() {
   }
 
   app.use(nuxt.render)
-
+  console.log('===========')
+  console.log(port)
+  console.log('===========')
   server.listen(port, () => {
     consola.ready({
       message: `Server listening on http://${host}:${port}`,
